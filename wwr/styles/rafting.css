@@ -1,7 +1,7 @@
 :root{
-    --primary-color: rgb(57, 231, 57);
+    --primary-color: #055A05;
     --accent1-color: rgb(89, 83, 133);
-    --accent2-color: rgb(187, 137, 23);
+    --accent2-color: #afeeee;
     --heading-font: Georgia, 'Times New Roman', Times, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
