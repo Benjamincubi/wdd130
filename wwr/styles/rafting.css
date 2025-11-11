@@ -47,7 +47,7 @@ h1, h2, h3{
 }
 
 nav, p, section, article{
-    margin: 1px;
+    margin: 16px;
     padding: 8px;
 }
 
@@ -76,6 +76,11 @@ h1{
     color: #fff;
 }
 
+article{
+    position: absolute;
+    top: 70px;
+    color: white;
+}
 
 .hero article img{
     float: right;
