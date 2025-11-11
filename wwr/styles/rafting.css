@@ -66,6 +66,7 @@ nav, p, section, article{
     display: block;
     width: 100%;
     height: auto;
+    filter: brightness(60%);
 }
 
 h1{
@@ -88,4 +89,5 @@ h1{
 .hero article img{
     float: right;
     width: 125px;
+    filter: brightness(100%);
 }
