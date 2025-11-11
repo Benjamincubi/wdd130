@@ -1,5 +1,6 @@
 :root{
     --primary-color: #055A05;
+    --secondary-color: white;
     --accent1-color: rgb(89, 83, 133);
     --accent2-color: #afeeee;
     --heading-font: Georgia, 'Times New Roman', Times, serif;
@@ -28,6 +29,9 @@ header nav{
 
 li{
     padding: 10px;
+}
+li a{
+    color: var(--secondary-color);
 }
 
 body{
@@ -78,7 +82,7 @@ h1{
 .hero article{
     position: absolute;
     top: 70px;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .hero article img{
