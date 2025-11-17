@@ -106,11 +106,12 @@ h1{
     filter: brightness(100%);
 }
 
-.image-history {
+.image-history img{
     width: 200px;
     height: auto;
-    justify-self: center;
-    align-self:center;
+    justify-self: center;  
+    align-items: center; 
+    padding-top: 40px;  
 }
 
 .history-section h3 {
@@ -120,7 +121,6 @@ h1{
 .grid-container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    /* Opcional: Centra los ítems verticalmente */
     align-items: start; 
 }
 
