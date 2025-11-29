@@ -3,63 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD130 | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
-    <header></header>
-    <main>        
-        <h1>Contact Information</h1>
+    <header>
+        <h1>WWD130 | HTML Form - User Poll</h1>
+    </header>
+    
+    <main>
+        <form> 
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <div class="form-item column2">
+                    <label for="fullname">Full Name: </label>
+                    <!-- The user's full name using input of type text, id of "fullname" and name of "fullname" and make it required. -->
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-item column2">
+                    <label for="useremail">Email: </label>
+                    <!-- The user's email address using input of type email, an id of "useremail", and a name property value of "useremail" and make it required. -->
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
 
-        <!-- Build the Form: -->
-        <form>
-            <label for="fullname">Full Name: </label>
-            <!-- The user's full name using input of type text, id of "fullname" and name of "fullname" and make it required. -->
-            <input type="text" id="fullname" name="fullname" required>
+            <fieldset>
+                <legend>Questions</legend>
+                 <!-- Create a multiple-choice format type of question using a select element -->
+                <div class="form-item column1">
+                    <!-- What is your favorite browser? -->
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="1" selected>Chrome</option>
+                        <option value="2">Safari</option>
+                        <option value="3">Edge</option>
+                        <option value="4">Brave</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
 
-            <label for="useremail">Email: </label>
-            <!-- The user's email address using input of type email, an id of "useremail", and a name property value of "useremail" and make it required. -->
-            <input type="email" id="useremail" name="useremail" required>          
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <!-- Use a single checkbox element -->
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <label for="feedback">List the places you have lived:</label>
+                <!-- Use a textarea element -->
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+            </fieldset>
+
+            <!--Bbutton with a type of submit at the end of the form element.  -->
+            <button type="submit">Submit Poll</button>
         </form>
-
-        <h1>uestions</h1>
-
-        <!-- Create a multiple-choice format type of question using a select element -->
-         <form>
-            <label for="quantity">Select Quantity</label>
-            <select name="quantity" id="quantity">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-         </form>
-
-          <!-- What is your favorite browser? -->
-         <form>
-            <label for="browser">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="1">Chrome</option>
-                <option value="2">Safari</option>
-                <option value="3">Edge</option>
-                <option value="4">Brave</option>
-                <option value="5">Other</option>
-            </select>
-         </form>
-
-         <form>
-             <!-- Use a single checkbox element -->
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
-         </form>
-
-         <form>
-            <!-- Use a textarea element -->
-            <label for="feedback">List the places you have lived</label>
-            <textarea id="feedback" name="feedback" rows="4" placeholder="places you have lived"></textarea>
-         </form>
-
-         <!-- dd a button with a type of submit at the end of the form element.  -->
-         <button type="submit">Submit Poll</button>
     </main>
-    <footer></footer>
+    
+    <footer>
+        <p>© 2025 | HTML Form - User Poll Activity | Benjamin Cubi</p>
+    </footer>
 </body>
 </html>
