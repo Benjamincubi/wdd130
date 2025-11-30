@@ -156,3 +156,185 @@ footer p {
     text-align: center;
     grid-column: 2 / 3;
 }
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --- Styles for Contact.html --- */
+.contact-section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; /* Espacio entre columnas y filas */
+    align-items: center; 
+    padding: 10px;
+}
+
+.map {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px; 
+}
+
+.contact-form {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+    width: 100%;
+    padding: 30px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+ .form-group {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    margin-bottom: 15px; 
+}
+ 
+.contact-form label {
+    font-weight: bold;
+    color: var(--primary-color);
+    
+    min-width: 70px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"]{
+    flex-grow: 1;  /*Permite que el input/textarea ocupe el espacio restante */
+    padding: 10px;
+    border: 1px solid #989898;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.message-purpose {
+    display: block;
+    margin: 20px 20px;
+}
+
+.message-purpose legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--accent1-color);
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.message-group {
+    display: block;
+    padding-left: 20px;
+}
+
+.message-group label {
+    display: block; /* Ocupa el 100% del ancho y salta de línea */
+    margin-left: 0px;  
+    text-align: left; 
+    padding-bottom: 5px;
+}
+
+.contact-form textarea {
+    margin: auto;
+    width: 100%;
+}
+
+.form-group .checkbox{
+    display: flex;
+    margin-top: 20px;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+.form-group.checkbox label {
+    color: var(--primary-color); 
+}
+
+.contact-form button[type="submit"] {
+    display: block;
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    background-color: #e6e6e6; 
+    color: #333; /
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #d9d9d9;
+}
+
+.company-info {
+    grid-column: 1 / -1; 
+
+    display: block;
+    text-align: center;
+}
+
+.company-info h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.company-info p {
+    margin: 0;
+    padding: 3px;
+    color: var(--accent1-color);
+    font-size: 1.1rem;
+}
+
+/* --- Estilos para Perfiles de Empleados --- */
+
+.employee-profiles {
+    text-align: center;
+    margin-top: 20px;
+    border:1px solid rgb(0 0 0 / 20%);
+    background-color: #f9f9f9;
+}
+
+.profiles-grid {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.employee {
+    text-align: center;
+    max-width: 200px;
+}
+
+.employee img {
+    width: 140px; 
+    height: auto;
+    margin-bottom: 5px; 
+}
+
+.employee figcaption {
+    color: var(--accent1-color);
+    font-weight: bold;
+}

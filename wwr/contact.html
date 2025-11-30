@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="author" content="Benjamin David Cubi">
+    <meta name="description" content="This page will have contact information and a form which the user can submit to ask questions about the company and its services.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<body>
+   <header>     <!-- The header contains two (2) item: a site logo and a nav element with four (4) child <a> tags -->
+        <img src="images/therapids.jpg" alt="the rapids logo">    <!-- A rafting site logo downloaded from https://byui-cse.github.io/wdd130-ww-course/resources/wwr-logos-repo.html -->
+        <nav>       <!-- nav element with four (4) child <a> tags -->
+            <ul>
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="about.html"><strong>About Us</strong></a></li>
+                <li><a href="trips.html"><strong>Trips</strong></a></li>
+                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+            </ul>
+        </nav>
+    </header> 
+
+                <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <main>
+        <section class="contact-section">
+            <div class="company-info">
+                <h2>Raftventure</h2>
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p>Teléfono: +1 999 999 9999</p>
+                <p>Email: <a href="mailto:info@raftventure.com">info@raftventure.com</a></p>
+            </div>
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+            
+            
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102005.15174116035!2d-113.15589133469395!3d37.47214555818987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b2a7516d29b2
+                    8f%3A0x6739d48b1115597b!2sKolob%2C%20CA%2092507%2C%20USA!5e0!3m2!1sen!2sar!4v1678201501723!5m2!1sen!2sar" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <form class="contact-form">
+                <h3>Contact Us</h3>
+                <div class="form-group">
+                    <label for="user-name">Name:</label>
+                    <input type="text" id="user-name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" name="user-email" required>
+                </div>
+                
+                <fieldset class="form-group message-purpose">
+                    <legend>Message Purpose:</legend>
+                    <div class="radio-option">
+                        <input type="radio" id="general-inquiry" name="message_purpose" value="General Inquiry" required>
+                        <label for="general-inquiry">General Inquiry</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="reservation-question" name="message_purpose" value="Reservation Question">
+                        <label for="reservation-question">Reservation Question</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="website-suggestion" name="message_purpose" value="Website Suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group message-group">
+                    <label for="message-text">Message:</label>
+                    <textarea id="message-text" name="message_text" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="subscription" name="subscription">
+                    <label for="subscription">Please Subscribe me to the monthlyly newsletter</label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <section class="employee-profiles">
+            <h2>We Are Here To Serve You</h2>
+            <div class="profiles-grid">
+                <figure class="employee">
+                    <img src="images/empleado-1.jpg" alt="Perfil del Empleado 1"> 
+                    <figcaption>Operations Manager</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/empleado-2.jpg" alt="Perfil del Empleado 2">
+                    <figcaption>Leader of Guides</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/empleado-3.jpg" alt="Perfil del Empleado 3">
+                    <figcaption>Reservations specialist</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <footer>
+        <p>©2025 | Raftventure | Benjamin Cubi</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"> 
+                <img src="images/facebook-icon.png" alt="dark facebook icon">
+            </a>
+
+            <a href="https://linkedin.com"> 
+                <img src="images/linkedin-icon.png" alt="dark linkedin icon">
+            </a>
+            
+            <a href="https://instagram.com"> 
+                <img src="images/instagram-icon.png" alt="dark Instagram icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
