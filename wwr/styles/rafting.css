@@ -83,7 +83,7 @@ nav, p, section, article{
     filter: brightness(60%);
 }
 
-h1{
+#about-us-title {   /* h1 about us */
     position: absolute;
     top: 20px;
     width: 100%;
@@ -191,11 +191,10 @@ footer p {
     background-color: #f9f9f9;
 }
 
-.contact-form h3 {
+#contact-us-title  {
     text-align: center;
     margin-bottom: 20px;
     color: var(--primary-color);
-    font-size: 1.5rem;
 }
 
  .form-group {
@@ -338,3 +337,9 @@ footer p {
     color: var(--accent1-color);
     font-weight: bold;
 }
+
+/*#contact-us-title {
+     Tus nuevas modificaciones 
+    color: purple;
+    border-bottom: 2px solid purple;
+}*/
