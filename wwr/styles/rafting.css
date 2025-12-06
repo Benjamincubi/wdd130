@@ -100,7 +100,7 @@ nav, p, section, article{
     padding: 20px;
 }
 
-article h2 {
+#title-article {
     color: var(--secondary-color);
 }
 
