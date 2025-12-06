@@ -28,7 +28,6 @@ header img{
 }
 
 header nav{
-    /* margin: 0 0 16px 30px; */
     align-items: center;
 }
 
@@ -39,9 +38,6 @@ ul {
     font-size: larger;
 }
 
-/* li{
-    padding: 10px;
-} */
 li a{
     color: var(--secondary-color);
     text-decoration: none;
@@ -400,6 +396,13 @@ footer p {
     gap: 15px;
     padding: 40px 10px;
     margin: 0;
+}
+
+.home-offerings h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.5rem;
 }
 
 .offer {
